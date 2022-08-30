@@ -38,7 +38,8 @@ public class Main {
 	    		System.out.println(i + " " + j);
 	    	}
 	    	*/
-	    	int []numeros = new int[10];//vetor estático
+	    	/* vetores
+	    	int []numeros = new int[10];//vetor estático 	
 	    	for(int i = 0; i < 10 ; i++ ) {
 	    		numeros[i] = i +1;
 	    		//System.out.println(i);
@@ -52,7 +53,29 @@ public class Main {
 	    	System.out.println(numeros);
 	    
 	        
-	   
+	   */
+	    	
+	    	// Matriz
+	    	Scanner s  = new Scanner(System.in);
+	    	
+	    	int linha = s.nextInt();
+	    	int coluna = s.nextInt();
+	    	
+	    	int [][]mat = new int[linha][coluna];
+	
+	    	
+	    	for(int i = 0; i < linha; i ++) {
+	    		for(int j = 0; j < coluna; j ++) {
+	    			mat[i][j] =  10 * i * j;
+	    		}
+	    	}		    	
+	    	for(int i = 0; i < 2; i ++) {
+	    		for(int j = 0; j < 2; j ++) {
+	    			System.out.print(mat[i][j] + " ");
+	    		}
+	    		System.out.println();
+	    	}
+	    	
 	    	
 	    	
 		}
