@@ -9,7 +9,9 @@ public abstract class Heroi {
 		this.forca = forca;
 	}
 	
-	
+	public abstract float atacar(Heroi h);
+		
+
 
 
 	public float getPontosVida() {

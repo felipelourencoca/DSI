@@ -10,6 +10,12 @@ public class Yanchia extends Heroi {
 		 this.pontosVida =- 100;
 		 return h.getPontosVida();
 	}
+
+	@Override
+	public float atacar(Heroi h) {
+		this.pontosVida = -100;
+		return h.getPontosVida();
+	}
 	
 	/*
 	public float atacar(Heroi h) {

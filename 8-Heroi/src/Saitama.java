@@ -14,6 +14,15 @@ public class Saitama extends Heroi {
 		
 		return h.getPontosVida();
 	}
+
+	@Override
+	public float atacar(Heroi h) {
+		if(h.getPontosVida() > 0) {
+			h.setPontosVida(h.getPontosVida() - 100000);
+			return h.getPontosVida();
+		}
+		return h.getPontosVida();
+	}
 	
 	/*
 	public float atacar(Heroi h) {
